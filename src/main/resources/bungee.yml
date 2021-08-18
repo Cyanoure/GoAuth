@@ -1,0 +1,25 @@
+name: GoAuth
+main: ga.cyanoure.goauth.bungee.Main
+version: @version@
+author: Cyanoure
+website: https://www.cyanoure.ga/
+commands:
+    login:
+        aliases: l
+        usage: /<command> <password>
+    register:
+        aliases: [reg,r]
+        usage: /<command> <password> <password>
+    2fa:
+        permission: goauth.twofactor
+        aliases: [twofa, twofactor]
+        usage: /<command> <2fa code>
+    goauth:
+        permission: goauth.admin
+        aliases: [gauth, auth]
+
+permissions:
+    goauth.twofactor:
+        default: false
+    goauth.admin:
+        default: op

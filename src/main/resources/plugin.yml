@@ -1,0 +1,27 @@
+name: GoAuth
+version: @version@
+main: ga.cyanoure.goauth.spigot.GoAuth
+author: Cyanoure
+website: https://www.cyanoure.ga/
+commands:
+  login:
+    aliases: l
+    usage: /<command> <password>
+  register:
+    aliases: [reg]
+    usage: /<command> <password> <password>
+  2fa:
+    aliases: [twofa, twofactor]
+    usage: /<command> <2fa code>
+  goauth:
+    aliases: [gauth, auth]
+    usage: /<command> [subcommand]
+  changepassword:
+    aliases: [changepass,chpass,chpwd,chpasswd,chpassword,chpw]
+    usage: /<command> <current password> <new password> <repeat new password>
+
+permissions:
+  goauth.twofactor:
+    default: false
+  goauth.admin:
+    default: op

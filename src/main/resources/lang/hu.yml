@@ -1,0 +1,65 @@
+loginMessage: "&cJelentkezz be: &3/login &6<jelszó>"
+registerMessage: "&cRegisztrálj: &3/register &6<jelszó> <jelszó újra>"
+successRegister: "&2Sikeresen regisztráltál."
+successLogin: "&2Sikeresen bejelentkeztél."
+alreadyLoggedIn: "&cMár be vagy jelentkezve."
+alreadyRegistered: "&cMár regisztráltál."
+forceLoggedIn: "&2Játékos bejelentkeztetve."
+forceLoginNotify: "&2Egy admin bejelentkeztetett."
+forceRegistered: "&2Játékos regisztrálva."
+playerIsOffline: "&cA játékos offline."
+playerAlreadyRegistered: "&cA játékos már regisztrálva van."
+playerAlreadyLoggedIn: "&cA játékos már be van jelentkezve."
+error: "&cValami hiba történt!"
+googleAuthSetup: "&cKétfaktoros hitelesítés szükséges! Google Hitelesítő kulcsod: &6{0} &cHa beállítottad, írd be: &3/2fa &6<alkalmazásban kapott kód>"
+googleAuthCode: "&cAdd meg a Google Hitelesítő alkalmazásban kapott kódot: &3/2fa &6<kód>"
+pluginLoaded: "&2Plugin betöltve."
+bungeeMode: "&6BungeeCord mód engedélyezve."
+bungeeDetected: "&cA szerveren be van kapcsolva a BungeeCord. Ha szeretnéd használni a plugin BungeeCord funkcióját, engedélyezd a configban."
+loginUsage: "&cHasználat: &3/login &6<jelszó>"
+registerUsage: "&cHasználat: &3/register &6<jelszó> <jelszó újra>"
+twofactorUsage: "&cHasználat: &3/2fa &6<kód>"
+incorrectPassword: "&cHelytelen jelszó."
+autoLogin: "&2Automatikusan be lettél jelentkeztetve."
+autoLoginConsole: "&2{0} &2automatikusan be lett jelentkeztetve."
+loginConsole: "&2{0} &2bejelentkezett."
+registerConsole: "&2{0} &2regisztrált."
+2faConsole: "&2{0} &2kétfaktoros hitelesítése megtörtént."
+passwordsNMatch: "&cA jelszavak nem egyeznek."
+loginTimeout: "&cTúl sokáig tartott a bejelentkezés."
+mysqlConnectionError: "&cHiba! Nincs kapcsolat az adatbázissal. Próbáld újra később, vagy keress fel egy staffot."
+pluginHelp: |
+  &8<-------- &3GoAuth&8 -------->
+  &8-- &3/goauth &7- Ezt a súgót hozza elő
+  &8-- &3/login &6<jelszó> &7- Bejelentkezés
+  &8-- &3/register &6<jelszó> <jelszó újra> &7- Regisztráció
+  &8-- &3/2fa &6<kód> &7- Kétfaktoros hitelesítés
+  &8-- &3/changepassword &6<jelenlegi jelszó> <új jelszó> <új jelszó újra> &7- Jelszócsere
+pluginHelpAdmin: |
+  &c-- &3/goauth register &6<játékos> <jelszó> &7- Játékos regisztrálása
+  &c-- &3/goauth unregister &6<játékos> &7- Játékos regisztrációjának törlése
+  &c-- &3/goauth forcelogin &6<játékos> &7- Játékos bejelentkeztetése
+  &c-- &3/goauth info &6<játékos> &7- Játékos adatai
+playerInfo: |
+  &8<-------- &3{0}&8 -------->
+  &c-- &3Regisztrált: {1}
+  &c-- &3Regisztrációkor használt IP: {2}
+  &c-- &3Utolsó bejelentkezés: {3}
+  &c-- &3Utolsó IP: {4}
+  &c-- &3Utolsó szerver: {5}
+chpassUsage: "&cHasználat: &3/changepassword &6<jelenlegi jelszó> <új jelszó> <új jelszó újra>"
+chpassSuccess: "&2Jelszó sikeresen megváltoztatva."
+chpassConsole: "&2{0} jelszava megváltozott."
+2faDenied: "&c2fa kód elutasítva."
+2faAccepted: "&a2fa kód elfogadva."
+usernameCaseKick: "&c{0} néven játszottál ezelőtt. Ne cseréld fel a kis-és nagybetűket a nevedben!"
+onlyPlayer: "&cEzt a parancsot csak játékos futtathatja!"
+noPerm: "&cEhhez nincs jogosultságod!"
+badUsage: "&cHelytelen használat. További információkért írd be &6/goauth&c."
+playerNotFound: "&cA játékos nem található."
+hasntPlayedBefore: "&cA játékos még nem játszott ezen a szerveren!"
+adminPlayerDeleteSuccess: "&2Játékos regisztrációja sikeresen törölve."
+adminUnregistered: "&cEgy admin törölte a regisztrációdat."
+adminRegistered: "&2Egy admin regisztrált."
+dateFormat: "yyyy.MM.dd. HH:mm:ss"
+commandsDisabledBungee: "&cBungeeCord módban a plugin parancsai le vannak tiltva. Használd BungeeCordon a parancsokat."

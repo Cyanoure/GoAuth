@@ -1,0 +1,58 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+    id 'java'
+    id 'io.spring.dependency-management' version '1.0.1.RELEASE'
+}
+
+group = 'ga.cyanoure'
+version = '0.8.2-DEV'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+dependencyManagement {
+    imports {
+        mavenBom 'org.apache.logging.log4j:log4j-bom:2.14.0'
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'spigotmc-repo'
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+    maven {
+        name = 'sonatype'
+        url = 'https://oss.sonatype.org/content/groups/public/'
+    }
+    maven { url "https://mvnrepository.com/artifact/net.md-5/bungeecord-api" }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+    compileOnly group: 'net.md-5', name: 'bungeecord-api', version: '1.16-R0.3'
+    compile 'org.apache.logging.log4j:log4j-api'
+    compile 'org.apache.logging.log4j:log4j-core'
+    compile group: 'org.yaml', name: 'snakeyaml', version: '1.21'
+}
+
+processResources {
+    from(sourceSets.main.resources.srcDirs) {
+        filter ReplaceTokens, tokens: [version: version]
+    }
+}
+
+jar{
+    archiveName = "${rootProject.name}.${extension}"
+}
+
+task copyJar {
+    copy {
+        from jar
+        into "jars"
+        rename { "${rootProject.name}_v${version}.jar" }
+    }
+}

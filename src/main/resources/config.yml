@@ -1,0 +1,17 @@
+prefix: "&8[&3GoAuth&8] "
+enable-register: true
+enable-2fa: false
+language: "hu"
+password-prefix: "GoAuth" # Don't change if there are registered users!
+bungeecord: false
+server: "default" # Specified in bungeecord config or leave default if the server is not in bungeecord
+session-length: 60
+secret: "DontExploit" # password to authenticate bungeecord to safe auto login
+login-timeout: 60
+username-case-protection: true
+mysql:
+    host: "localhost:3306"
+    database: "minecraft"
+    user: "user123"
+    password: "pass123"
+    registered-players-table: "goauth"
